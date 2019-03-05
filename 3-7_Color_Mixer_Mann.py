@@ -52,10 +52,10 @@ def colorIn():
 	#clear the screen
 	os.system(clear);
 	#print instructions
-	print('Color One')
-	print('You can mix Red Blue or Yellow').
+	print('Color One');
+	print('You can mix Red Blue or Yellow');
 	#get the first color from the user
-	color1 = input('>>>')
+	color1 = input('>>>');
 	#repeat last 4 lines for the second color
 	os.system(clear);
 	print('Color Two');
@@ -67,16 +67,77 @@ def colorIn():
 	
 #Mix the colors
 def colorMix():
-	#useing if elif statements to determin what colors are being mixed and what color it makes
+	#useing if elif statements to determin what colors are being mixed and what color it makes along with its HTML Hex Color Code
 	if color1.lower() == 'red' and color2.lower() == 'red':
-	
+		os.system(clear);
+		print('Red and Red mix to make Red');
+		print('HTML Color Code is #FF0000');
+		time.sleep(5);
+		colorIn();
+		
 	elif color1.lower() == 'red' and color2.lower() == 'blue':
-	
+		os.system(clear);
+		print('Red and Blue mix to make Purple');
+		print('HTML Color Code is #800080');
+		time.sleep(5);
+		colorIn();
+		
 	elif color1.lower() == 'red' and color2.lower() == 'yellow':
-	
+		os.system(clear);
+		print('Red and Yellow mix to make Orange');
+		print('HTML Color Code is #FFA500');
+		time.sleep(5);
+		colorIn();
+		
 	elif color1.lower() == 'blue' and color2.lower() == 'red':
-	
+		os.system(clear);
+		print('Blue and Red mix to make Purple');
+		print('HTML Color Code is #800080');
+		time.sleep(5);
+		colorIn();
+		
 	elif color1.lower() == 'blue' and color2.lower() == 'blue':
-	
+		os.system(clear);
+		print('Blue and Blue mix to make Blue');
+		print('HTML Color Code is #0000FF');
+		time.sleep(5);
+		colorIn();
+		
 	elif color1.lower() == 'blue' and color2.lower() == 'yellow':
+		os.system(clear);
+		print('Blue and Yellow mix to make Green');
+		print('HTML Color Code is #008000');
+		time.sleep(5);
+		colorIn();
+		
+	elif color1.lower() == 'yellow' and color2.lower() == 'red':
+		os.system(clear);
+		print('Yellow and Red mix to make Red Orange');
+		print('HTML Color Code is #FFA500');
+		time.sleep(5);
+		colorIn();
+		
+	elif color1.lower() == 'yellow' and color2.lower() == 'blue':
+		os.system(clear);
+		print('Yellow and Blue mix to make Green');
+		print('HTML Color Code is #008000');
+		time.sleep(5);
+		colorIn();
+		
+	elif color1.lower() == 'yellow' and color2.lower() == 'yellow':
+		os.system(clear);
+		print('Yellow and Yellow mix to make Yellow');
+		print('HTML Color Code is #FFFF00');
+		time.sleep(5);
+		colorIn();
 	
+	#if input does not match any of the above statements
+	else:
+		os.system(clear);
+		print('One of the colors you picked is not valid');
+		time.sleep(3);
+		colorIn();
+		
+		
+osCheck();
+colorIn();0
