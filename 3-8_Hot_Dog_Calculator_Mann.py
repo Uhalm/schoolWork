@@ -1,3 +1,4 @@
+#Paul Mann
 #import needed stuff#
 import time;
 import os;
@@ -94,7 +95,7 @@ def calc():
 	bunPacNeed = math.ceil(int(bunNeed) / int(bunPerPac));
 	
 	#calculate how many hot dogs will be bought
-	tempDogBuy = int(dogPacNeed) * int(dogsPerPac)
+	tempDogBuy = int(dogPacNeed) * int(dogsPerPac);
 	#calculate how many hot dogs
 osCheck();
 userInput();
