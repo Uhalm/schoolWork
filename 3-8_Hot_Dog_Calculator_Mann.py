@@ -96,6 +96,30 @@ def calc():
 	
 	#calculate how many hot dogs will be bought
 	tempDogBuy = int(dogPacNeed) * int(dogsPerPac);
-	#calculate how many hot dogs
+	#calculate how many hot dogs will be left
+	leftOverDog = int(tempDogBuy) - int(dogNeed);
+	
+	#calculate buns that will be bought
+	tempBunBuy = int(bunPacNeed) * int(bunPerPac);
+	#lef over buns
+	leftOverBun = int(tempBunBuy) - int(bunNeed);
+	
+	result();
+	
+	
+#PRINT THE RESULTS
+def result():
+	#test line
+	#print(leftOverBun, leftOverDog, bunNeed, dogNeed, dogPacNeed, bunPacNeed);
+	#print how many hot dogs are needed and left over
+	print('You will need', dogPacNeed, 'Hot Dog packs.');
+	print('You will have', dogNeed, 'Hot Dogs with', leftOverDog, 'left.')
+	#same as last two lines but buns
+	print('You will need', bunPacNeed, 'packs of Buns.');
+	print('You will have', bunNeed, 'Buns with', leftOverBun, 'left');
+	#print what the user inputed
+	print('There will be', people, 'people with', dogPer, 'Hot Dogs per person');
+	time.sleep(25);
+	userInput();
 osCheck();
 userInput();
