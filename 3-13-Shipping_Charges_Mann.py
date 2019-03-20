@@ -105,21 +105,23 @@ def calc():
 	#check what the weight of the packages are
 	#2 lbs or less
 	if weightNum <= 2:
+		#calculate output price
 		priceOut = weightNum * twoLess;
+		#run printer function
 		printer();
-		
+	#if between 2 and 6 lbs
 	elif weightNum > 2 and weightNum <= 6:
 		priceOut = weightNum * twoSix;
 		printer();
-		
+	#if between 6 and 10 lbs
 	elif weightNum > 6 and weightNum <= 10:
 		priceOut = weightNum * sixTen;
 		printer();
-		
+	#if over 10 lbs
 	elif weightNum > 10:
 		priceOut = weightNum * tenPlus;
 		printer();
-		
+	#this should never show up its a error code if these statements before dont work
 	else:
 		print("""This error shouldn't print unless there is a problem
 		Code: 001""");
